@@ -1,0 +1,12 @@
+package com.anupam.jetpackapps.stockapp
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.anupam.jetpackapps.R
+
+class StocksFragment : Fragment() {
+
+}

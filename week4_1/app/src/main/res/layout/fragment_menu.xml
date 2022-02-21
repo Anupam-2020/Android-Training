@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.anupam.jetpackapps.fragcom.FragCommViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragcom.MenuFragment">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E82020"
+            android:onClick="@{()->vm.changeColor(`#E82020`)}"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="@{ () -> vm.changeColor(`#FFEB3B`)}"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:onClick="@{ () -> vm.changeColor(`#FF9800`)}"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#03A9F4"
+            android:onClick="@{ () -> vm.changeColor(`#03A9F4`)}"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="@{ () -> vm.changeColor(`#FFFFFF`)}"
+            android:text="Button" />
+    </LinearLayout>
+</layout>
