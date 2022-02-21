@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EmiCalculator</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="tenure">Tenure</string>
+    <string name="textview">TextView</string>
+    <string name="_0">0</string>
+    <string name="_0_1">0</string>
+    <string name="_0_2">0</string>
+</resources>
