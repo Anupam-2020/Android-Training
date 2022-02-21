@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AndroidBasics</string>
+    <string name="welcome_message">Welcome to Android Development</string>
+    <string name="inv_num">Invoice </string>
+    <string name="item">Item</string>
+    <string name="qty">Quantity</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="generate">Generate</string>
+    <string name="counter">00</string>
+    <string name="checkbox">Is Complete</string>
+    <string name="text">Size</string>
+    <string name="name">Name</string>
+    <string name="textview7">TextView</string>
+    <string name="send">Send</string>
+    <string name="user">User</string>
+    <string name="time">Time</string>
+    <string name="Message">Message</string>
+</resources>
