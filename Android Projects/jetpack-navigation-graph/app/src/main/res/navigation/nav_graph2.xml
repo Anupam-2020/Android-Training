@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/screenOneFragment">
+    <fragment
+        android:id="@+id/screenOneFragment"
+        android:name="com.anupam.jetpacknavigationgraph.expense_manager.ScreenOneFragment"
+        android:label="fragment_screen_one"
+        tools:layout="@layout/fragment_screen_one" >
+        <action
+            android:id="@+id/action_screenOneFragment_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment" />
+        <action
+            android:id="@+id/action_screenOneFragment_to_screenThreeFragment"
+            app:destination="@id/screenThreeFragment" />
+        <argument
+            android:name="item"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="about"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenTwoFragment"
+        android:name="com.anupam.jetpacknavigationgraph.expense_manager.ScreenTwoFragment"
+        android:label="fragment_screen_two"
+        tools:layout="@layout/fragment_screen_two" >
+        <action
+            android:id="@+id/action_screenTwoFragment_to_screenOneFragment"
+            app:destination="@id/screenOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenThreeFragment"
+        android:name="com.anupam.jetpacknavigationgraph.expense_manager.ScreenThreeFragment"
+        android:label="fragment_screen_three"
+        tools:layout="@layout/fragment_screen_three" >
+        <argument
+            android:name="item"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="about"
+            app:argType="string" />
+    </fragment>
+</navigation>

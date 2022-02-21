@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_chooseRecipientFragment2"
+            app:destination="@id/chooseRecipientFragment2"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewTxnFragment2"
+            app:destination="@id/viewTxnFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewBalanceFragment2"
+            app:destination="@id/viewBalanceFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseRecipientFragment2"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.ChooseRecipientFragment"
+        android:label="fragment_choose_recipient"
+        tools:layout="@layout/fragment_choose_recipient" >
+        <action
+            android:id="@+id/action_chooseRecipientFragment2_to_specifyAmountFragment"
+            app:destination="@id/specifyAmountFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewTxnFragment2"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.ViewTxnFragment"
+        android:label="fragment_view_txn"
+        tools:layout="@layout/fragment_view_txn" />
+    <fragment
+        android:id="@+id/viewBalanceFragment2"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.ViewBalanceFragment"
+        android:label="fragment_view_balance"
+        tools:layout="@layout/fragment_view_balance" />
+    <fragment
+        android:id="@+id/specifyAmountFragment"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.SpecifyAmountFragment"
+        android:label="fragment_specify_amount"
+        tools:layout="@layout/fragment_specify_amount" >
+        <action
+            android:id="@+id/action_specifyAmountFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+        <argument
+            android:name="nm"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.anupam.jetpacknavigationgraph.fundamentals.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+
+        <argument
+            android:name="nm"
+            app:argType="string" />
+        <argument
+            android:name="amt"
+            app:argType="integer" />
+    </fragment>
+</navigation>

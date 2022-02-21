@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anupam.jetpacknavigationgraph">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JetPackNavigationGraph">
+        <activity
+            android:name=".expense_manager.ExpenseActivity"
+            android:exported="true"
+            android:label="@string/title_activity_expense"
+            android:theme="@style/Theme.JetPackNavigationGraph.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".stlthm.StlThmActivity"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".hammn.NvDrActivity"
+            android:exported="true"
+            android:label="@string/title_activity_nv_dr"
+            android:theme="@style/Theme.JetPackNavigationGraph.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".adv.BtnNavActivity"
+            android:exported="true"
+            android:label="@string/title_activity_btn_nav">
+
+
+        </activity>
+        <activity
+            android:name=".fundamentals.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.JetPackNavigationGraph.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>
